@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Lakbay — discover extraordinary destinations across the Philippines." />
+  <title>LAKBAY — Explore the Philippines</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- LOGO INTRO -->
+  <section class="intro-screen" id="introScreen" aria-label="LAKBAY introduction">
+    <div class="intro-inner">
+      <img
+        src="assets/pizza logo.png"
+        alt="Pizzarica J.CA Logo"
+        class="intro-logo"
+      />
+      <p class="intro-kicker">A JOURNEY THROUGH THE PHILIPPINES</p>
+      <button class="intro-continue" id="continueBtn" type="button">
+        <span>CONTINUE</span>
+        <b>→</b>
+      </button>
+    </div>
+  </section>
+
+  <header class="site-header" id="siteHeader">
+    <a class="brand" href="#">LAKBAY</a>
+
+    <nav class="desktop-nav" aria-label="Primary navigation">
+      <a href="#discover">DISCOVER</a>
+      <a href="#islands">ISLANDS</a>
+      <a href="#mountains">MOUNTAINS</a>
+      <a href="#culture">CULTURE</a>
+      <a href="#ocean">OCEAN</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="icon-btn" id="searchBtn" aria-label="Open search">⌕</button>
+      <button class="icon-btn" aria-label="Favorites">♡</button>
+      <button class="icon-btn menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#discover">DISCOVER</a>
+    <a href="#islands">ISLANDS</a>
+    <a href="#mountains">MOUNTAINS</a>
+    <a href="#culture">CULTURE</a>
+    <a href="#ocean">OCEAN</a>
+  </div>
+
+  <section class="hero" id="discover">
+    <img src="assets/el-nido.jpg" alt="El Nido limestone islands and turquoise water" />
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="eyebrow">PHILIPPINES / 7,641 ISLANDS</p>
+      <h1>DISCOVER<br><span>BEYOND.</span></h1>
+      <div class="hero-rule"></div>
+      <p class="hero-copy">From hidden beaches to mountain villages.<br>Find places that stay with you.</p>
+      <a class="outline-btn" href="#featured">EXPLORE DESTINATIONS <span>→</span></a>
+    </div>
+    <div class="hero-meta">
+      <span class="active">01</span>
+      <span>—</span>
+      <span>08</span>
+    </div>
+    <button class="scroll-cue" onclick="document.querySelector('#categories').scrollIntoView({behavior:'smooth'})" aria-label="Scroll down">↓</button>
+  </section>
+
+  <main>
+    <section class="section dark-section" id="categories">
+      <div class="section-heading">
+        <p class="eyebrow">CURATED EXPERIENCES</p>
+        <h2>EXPLORE OUR<br>WORLD</h2>
+      </div>
+
+      <div class="category-grid">
+        <a class="category-card" href="#islands">
+          <span class="card-number">01</span>
+          <img src="assets/amanpulo.jpg" alt="Amanpulo beach" />
+          <div class="card-shade"></div>
+          <div class="card-label"><span>ISLANDS</span><b>→</b></div>
+        </a>
+        <a class="category-card" href="#mountains">
+          <span class="card-number">02</span>
+          <img src="assets/mt-pulag.jpg" alt="Mount Pulag landscape" />
+          <div class="card-shade"></div>
+          <div class="card-label"><span>MOUNTAINS</span><b>→</b></div>
+        </a>
+        <a class="category-card" href="#culture">
+          <span class="card-number">03</span>
+          <img src="assets/banaue.jpg" alt="Banaue Rice Terraces" />
+          <div class="card-shade"></div>
+          <div class="card-label"><span>CULTURE</span><b>→</b></div>
+        </a>
+        <a class="category-card" href="#ocean">
+          <span class="card-number">04</span>
+          <img src="assets/tubbataha reef.jpg" alt="Tubbataha Reef underwater scene" />
+          <div class="card-shade"></div>
+          <div class="card-label"><span>OCEAN</span><b>→</b></div>
+        </a>
+        <a class="category-card" href="#featured">
+          <span class="card-number">05</span>
+          <img src="assets/chocolate-hills.jpg" alt="Chocolate Hills" />
+          <div class="card-shade"></div>
+          <div class="card-label"><span>ADVENTURE</span><b>→</b></div>
+        </a>
+      </div>
+    </section>
+
+    <section class="split-feature" id="mountains">
+      <div class="feature-image">
+        <img src="assets/sagada.jpg" alt="Sagada mountain landscape" />
+      </div>
+      <div class="feature-panel">
+        <p class="eyebrow">THE PHILIPPINE LANDSCAPE</p>
+        <h2>MADE FOR<br><em>EXPLORATION.</em></h2>
+        <p>Walk through ancient terraces, climb cloud-kissed peaks, dive into clear blue seas and meet communities shaped by generations of island life.</p>
+        <a class="outline-btn" href="#featured">VIEW DESTINATIONS <span>→</span></a>
+
+        <div class="feature-points">
+          <div><strong>◇</strong><span><b>RAW BEAUTY</b><small>Landscapes shaped by nature and time.</small></span></div>
+          <div><strong>◌</strong><span><b>LOCAL STORIES</b><small>Places connected to living culture.</small></span></div>
+          <div><strong>▦</strong><span><b>ISLAND DIVERSITY</b><small>Coasts, forests, terraces and peaks.</small></span></div>
+          <div><strong>✓</strong><span><b>RESPONSIBLE TRAVEL</b><small>Explore with respect for each place.</small></span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section featured-section" id="featured">
+      <div class="featured-head">
+        <div>
+          <p class="eyebrow">PLACES TO REMEMBER</p>
+          <h2>FEATURED DESTINATIONS</h2>
+        </div>
+        <div class="slider-controls">
+          <button id="prevBtn" aria-label="Previous destinations">←</button>
+          <button id="nextBtn" aria-label="Next destinations">→</button>
+        </div>
+      </div>
+
+      <div class="product-window">
+        <div class="destination-track" id="destinationTrack">
+          <article class="destination-card">
+            <div class="destination-image"><img src="assets/el-nido.jpg" alt="El Nido"></div>
+            <button class="heart" aria-label="Save El Nido">♡</button>
+            <p>PALAWAN</p><h3>EL NIDO</h3><span>Lagoon escapes · Island hopping</span>
+          </article>
+          <article class="destination-card">
+            <div class="destination-image"><img src="assets/amanpulo.jpg" alt="Amanpulo"></div>
+            <button class="heart" aria-label="Save Amanpulo">♡</button>
+            <p>PALAWAN</p><h3>AMANPULO</h3><span>White sand · Quiet shores</span>
+          </article>
+          <article class="destination-card">
+            <div class="destination-image"><img src="assets/banaue.jpg" alt="Banaue Rice Terraces"></div>
+            <button class="heart" aria-label="Save Banaue">♡</button>
+            <p>IFUGAO</p><h3>BANAUE</h3><span>Terraces · Mountain culture</span>
+          </article>
+          <article class="destination-card">
+            <div class="destination-image"><img src="assets/chocolate-hills.jpg" alt="Chocolate Hills"></div>
+            <button class="heart" aria-label="Save Chocolate Hills">♡</button>
+            <p>BOHOL</p><h3>CHOCOLATE HILLS</h3><span>Rolling hills · Countryside</span>
+          </article>
+          <article class="destination-card">
+            <div class="destination-image"><img src="assets/mt-pulag.jpg" alt="Mount Pulag"></div>
+            <button class="heart" aria-label="Save Mount Pulag">♡</button>
+            <p>BENGUET</p><h3>MT. PULAG</h3><span>Sea of clouds · Hiking</span>
+          </article>
+          <article class="destination-card">
+            <div class="destination-image"><img src="assets/siargao.jpg" alt="Siargao Island"></div>
+            <button class="heart" aria-label="Save Siargao">♡</button>
+            <p>SURIGAO DEL NORTE</p><h3>SIARGAO</h3><span>Surfing · Island life</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="wide-image-section" id="islands">
+      <img src="assets/siargao.jpg" alt="Siargao Island aerial coastline">
+      <div class="wide-overlay"></div>
+      <div class="wide-copy">
+        <p class="eyebrow">ISLAND LIFE</p>
+        <h2>FOLLOW THE<br><em>BLUE.</em></h2>
+        <p>Salt air, warm light and a horizon that keeps going.</p>
+      </div>
+    </section>
+
+    <section class="culture-section" id="culture">
+      <div class="culture-copy">
+        <p class="eyebrow">ROOTED IN PLACE</p>
+        <h2>LANDS WITH<br><em>A STORY.</em></h2>
+        <p>Travel deeper into the landscapes and communities that make the Philippines distinct—from the rice terraces of Ifugao to the highlands of Sagada.</p>
+        <a class="text-link" href="#featured">DISCOVER MORE <span>→</span></a>
+      </div>
+      <div class="culture-gallery">
+        <img class="gallery-main" src="assets/banaue.jpg" alt="Banaue Rice Terraces">
+        <img class="gallery-small" src="assets/chocolate-hills.jpg" alt="Chocolate Hills">
+      </div>
+    </section>
+
+    <section class="ocean-section" id="ocean">
+      <div class="ocean-image">
+        <img src="assets/tubbataha reef.jpg" alt="Tubbataha Reef">
+      </div>
+      <div class="ocean-copy">
+        <p class="eyebrow">UNDER THE SURFACE</p>
+        <h2>THE SEA<br><em>CALLS.</em></h2>
+        <p>Discover reefs, lagoons and coastlines where the journey continues beneath the water.</p>
+        <a class="outline-btn" href="#featured">EXPLORE THE OCEAN <span>→</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-top">
+      <a class="brand" href="#">LAKBAY</a>
+      <div>
+        <p class="eyebrow">STAY CURIOUS</p>
+        <h2>JOIN THE JOURNEY.</h2>
+      </div>
+      <form class="newsletter" id="newsletterForm">
+        <label for="email">Get new destinations in your inbox.</label>
+        <div><input id="email" type="email" placeholder="Email address" required><button type="submit">→</button></div>
+      </form>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 LAKBAY. ALL RIGHTS RESERVED.</span>
+      <div><a href="#">ABOUT</a><a href="#">JOURNAL</a><a href="#">CONTACT</a></div>
+      <div class="socials"><a href="#" aria-label="Instagram">◎</a><a href="#" aria-label="Facebook">f</a><a href="#" aria-label="YouTube">▶</a></div>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status"></div>
+  <script src="script.js"></script>
+</body>
+</html>
